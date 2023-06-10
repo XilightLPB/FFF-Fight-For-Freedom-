@@ -149,8 +149,9 @@ unsigned int CalculateDim(unsigned int NumberOfPlayer){
 
 void main(){
     printf("Hello world, at least it compiled\n");
-    unsigned int DimX = 10;
-    unsigned int DimY = 10;
+    unsigned int NumberOfPlayer = 4;  //Number of players
+    unsigned int DimX = CalculateDim(NumberOfPlayer);
+    unsigned int DimY = CalculateDim(NumberOfPlayer);
     struct Map* M = InitMap(DimX, DimY);
     printf("Map initialized\n");
     PrintMap(M);
