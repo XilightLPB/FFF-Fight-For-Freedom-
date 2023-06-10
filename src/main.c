@@ -71,7 +71,7 @@ struct Map{
 void main(){
     printf("Hello world, at least it compiled\n");
 
-    struct Map* M = InitMap(10, 10);
+    struct Map* M = (struct Map*) InitMap(10, 10);
     PrintMap(M);
 
 
