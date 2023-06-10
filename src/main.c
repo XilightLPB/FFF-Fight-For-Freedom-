@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+#define RAND_MAX = 42;
+#define RAND_MIN = 23;
+
 //Sorry for the french comments, I'm too lazy to translate them:
 
 //L'idée serait de crée un jeu basique qui contiendrait une Liste de bâtiments craftables qui rapporteraient passivement certaines ressources, de devoir miner les autres
@@ -126,8 +130,8 @@ unsigned long power(unsigned long x, unsigned long y){
     return result;
 }
 
-RAND_MAX = 42;
-RAND_MIN = 23;
+
+
 //uses random to get a decent amount of spaces knowing the number of players
 unsigned int CalculateDim(unsigned int NumberOfPlayer){
     unsigned int Dim = 0;
