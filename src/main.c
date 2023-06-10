@@ -26,6 +26,27 @@ struct Player{
 
 };
 
+struct UList{
+    struct* Unit U;
+    struct* ULis Next;
+};
+
+struct BList{
+    struct* Building B;
+    struct* BList Next;
+};
+
+struct Unit{
+    unsigned int HP;
+    unsigned int MaxHP;
+    unsigned int Damages;
+    unsigned int Range;
+    unsigned int Speed;
+    unsigned int coordx;
+    unsigned int coordy;
+    unsigned int Vision;
+}
+
 struct Building{
     struct* Player Owner;
     unsigned int HP;
