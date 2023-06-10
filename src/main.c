@@ -45,7 +45,7 @@ struct Unit{
     unsigned int coordx;
     unsigned int coordy;
     unsigned int Vision;
-}
+};
 
 struct Building{
     struct Player* Owner;
@@ -82,7 +82,7 @@ void main(){
 
 //Initialise la map avec des 0 partout
 struct Map* InitMap(DimX, DimY){
-    struct* Map M;
+    struct Map* M;
     M = malloc(sizeof(struct Map));
     M->DimX = DimX;
     M->DimY = DimY;
