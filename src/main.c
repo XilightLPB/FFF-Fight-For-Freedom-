@@ -70,8 +70,9 @@ struct Map{
 
 void main(){
     printf("Hello world, at least it compiled\n");
-
-    struct Map* M = InitMap(10, 10);
+    unsigned int DimX = 10;
+    unsigned int DimY = 10;
+    struct Map* M = InitMap(DimX, DimY);
     PrintMap(M);
 
 
