@@ -69,19 +69,10 @@ struct Map{
 };
 
 
-void main(){
-    printf("Hello world, at least it compiled\n");
-    unsigned int DimX = 10;
-    unsigned int DimY = 10;
-    struct Map* M = InitMap(DimX, DimY);
-    PrintMap(M);
 
 
 
-
-
-}
-
+//Let him cook, I SA
 
 //Initialise the map with 0 everywhere
 struct Map* InitMap(unsigned int DimX,unsigned int DimY){
@@ -109,3 +100,20 @@ void PrintMap(struct Map* M){
         printf("\n");
     }
 }
+
+
+
+void main(){
+    printf("Hello world, at least it compiled\n");
+    unsigned int DimX = 10;
+    unsigned int DimY = 10;
+    struct Map* M = InitMap(DimX, DimY);
+    PrintMap(M);
+
+
+
+
+
+}
+
+
