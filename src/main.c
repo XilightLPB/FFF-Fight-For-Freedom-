@@ -95,7 +95,7 @@ struct Map* InitMap(unsigned int DimX,unsigned int DimY){
 void PrintMap(struct Map* M){
     for(int i = 0; i < M->DimX; i++){
         for(int j = 0; j < M->DimY; j++){
-            printf("%c", M->Map[i][j]);
+            printf("1-", M->Map[i][j]);
         }
         printf("\n");
     }
@@ -110,6 +110,7 @@ void main(){
     struct Map* M = InitMap(DimX, DimY);
     printf("Map initialized\n");
     PrintMap(M);
+    printf("Map printed\n");
 
 
 
