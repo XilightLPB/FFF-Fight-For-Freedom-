@@ -108,7 +108,9 @@ void main(){
     unsigned int DimX = 10;
     unsigned int DimY = 10;
     struct Map* M = InitMap(DimX, DimY);
+    printf("Map initialized\n");
     PrintMap(M);
+
 
 
 
