@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 //Sorry for the french comments, I'm too lazy to translate them:
 
