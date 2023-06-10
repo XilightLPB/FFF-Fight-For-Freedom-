@@ -70,7 +70,7 @@ struct Map{
 void main(){
     printf("Hello world, at least it compiled\n");
 
-    struct* Map M = InitMap(10, 10);
+    struct Map* M = InitMap(10, 10);
     PrintMap(M);
 
 
@@ -81,7 +81,7 @@ void main(){
 
 
 //Initialise la map avec des 0 partout
-struct* Map InitMap(DimX, DimY){
+struct Map* InitMap(DimX, DimY){
     struct* Map M;
     M = malloc(sizeof(struct Map));
     M->DimX = DimX;
@@ -98,7 +98,7 @@ struct* Map InitMap(DimX, DimY){
 
 }
 
-void PrintMap(struct* Map M){
+void PrintMap(struct Map* M){
     for(int i = 0; i < M->DimX; i++){
         for(int j = 0; j < M->DimY; j++){
             printf("%c", M->Map[i][j]);
