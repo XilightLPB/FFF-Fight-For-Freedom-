@@ -15,8 +15,8 @@
 
 struct Player{
     int Score;
-    struct* UList Units;
-    struct* BList PBuildings;
+    struct UList* Units;
+    struct BList* PBuildings;
     unsigned int Gold;
     unsigned int Wood;
     unsigned int Stone;
@@ -27,13 +27,13 @@ struct Player{
 };
 
 struct UList{
-    struct* Unit U;
-    struct* ULis Next;
+    struct Unit* U;
+    struct ULis* Next;
 };
 
 struct BList{
-    struct* Building B;
-    struct* BList Next;
+    struct Building* B;
+    struct BList* Next;
 };
 
 struct Unit{
@@ -48,7 +48,7 @@ struct Unit{
 }
 
 struct Building{
-    struct* Player Owner;
+    struct Player* Owner;
     unsigned int HP;
     unsigned int MaxHP;
     unsigned int Level;
