@@ -2,7 +2,7 @@
 
 
 void main(){
-    printf("Hello world, at least it compiled");
+    printf("Hello world, at least it compiled\n");
 
 
 
