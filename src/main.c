@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 
-#define RAND_MAX = 42;
-#define RAND_MIN = 23;
+#define RAND_MAX = 23;
+#define RAND_MIN = 11;
 
 //Sorry for the french comments, I'm too lazy to translate them:
 
