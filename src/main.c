@@ -103,6 +103,44 @@ void PrintMap(struct Map* M){
     }
 }
 
+//Initialise the player
+struct Player* InitPlayer(){
+    struct Player* P;
+    P = malloc(sizeof(struct Player));
+    P->Score = 0;
+    P->Units = NULL;
+    P->PBuildings = NULL;
+    P->Gold = 0;
+    P->Wood = 0;
+    P->Stone = 0;
+    P->NumberUnit = 0;
+    P->NumberToPlay = 0;
+    return P;
+}
+
+unsigned long power(unsigned long x, unsigned long y){
+    unsigned long result = 1;
+    for(int i = 0; i < y; i++){
+        result = result*x;
+    }
+    return result;
+}
+
+RAND_MAX = 42;
+RAND_MIN = 23;
+//uses random to get a decent amount of spaces knowing the number of players
+unsigned int CalculateDim(unsigned int NumberOfPlayer){
+    unsigned int Dim = 0;
+    unsigned int Random = rand()%100;
+    printf("Random = %d\n", Random);
+    Dim = power(Random, NumberOfPlayer);
+    printf("Dim = %d\n", Dim);
+    return Dim;
+
+
+
+}
+
 
 
 void main(){
