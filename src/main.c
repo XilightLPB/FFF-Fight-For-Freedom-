@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Sorry for the french comments, I'm too lazy to translate them:
 
 //L'idée serait de crée un jeu basique qui contiendrait une Liste de bâtiments craftables qui rapporteraient passivement certaines ressources, de devoir miner les autres
 //Pour cela il faudra crée une liste dynamique d'unités et de Cités
@@ -80,8 +81,8 @@ void main(){
 }
 
 
-//Initialise la map avec des 0 partout
-struct Map* InitMap(DimX, DimY){
+//Initialise the map with 0 everywhere
+struct Map* InitMap(unsigned int DimX,unsigned int DimY){
     struct Map* M;
     M = malloc(sizeof(struct Map));
     M->DimX = DimX;
