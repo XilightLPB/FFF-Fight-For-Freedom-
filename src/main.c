@@ -5,7 +5,7 @@
 #define RAND_MAX = 23;
 #define RAND_MIN = 11;
 
-//Sorry for the french comments, I'm too lazy to translate them:
+//Sorry for the french comments, I'm too lazy to translate them, and it's easier for me to read them in french when I'll need it:
 
 //L'idée serait de crée un jeu basique qui contiendrait une Liste de bâtiments craftables qui rapporteraient passivement certaines ressources, de devoir miner les autres
 //Pour cela il faudra crée une liste dynamique d'unités et de Cités
